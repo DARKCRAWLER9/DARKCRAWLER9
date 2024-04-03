@@ -1,0 +1,17 @@
+function timeAndIdeaToMoney(timeInHours, idea) {
+    // Define the rate per hour for time and a fixed value for the idea
+    const ratePerHour = 20; // Example rate: $20 per hour
+    const ideaValue = 100; // Example value: $100 for the idea
+
+    // Calculate the total money
+    const totalMoney = (timeInHours * ratePerHour) + ideaValue;
+
+    return totalMoney;
+}
+
+// Example usage
+const timeSpent = 5; // 5 hours
+const creativeIdea = "A new app concept"; // The idea
+
+const result = timeAndIdeaToMoney(timeSpent, creativeIdea);
+console.log(`The result of ${timeSpent} hours of time and the idea "${creativeIdea}" is $${result} in money.`);
